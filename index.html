@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    height:100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.counter{
+border: 5px solid pink;
+width: 600px;
+height: 350px;
+margin: auto;
+padding: 25px;
+text-align: center;
+background: #fefefe;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-radius: 20%;
+background-color: salmon;
+}
+.counter h1{
+    font-size: 2rem;
+}
+#count{
+    font-size: 9rem;
+}
+button {
+    padding: 10px;
+    border: 5px solid whitesmoke;
+    background-color:whitesmoke;
+    border-radius: 5px;
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="counter">
+            <h1>COUNTER</h1>
+            <h1 id="count">0</h1>
+            <div class="btn">
+                <button type="button" class="btn1" onclick="changeCount(1)">Increase</button>
+                <button type="button" class="btn2"onclick="changeCount(-1)">Decrease</button>
+                <button type="button" class="btn3" onclick="changeCount(0)">Reset</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
